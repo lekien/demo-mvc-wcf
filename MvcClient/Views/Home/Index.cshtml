@@ -1,0 +1,53 @@
+﻿@model IEnumerable<MvcClient.Models.MemberDetail>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="row">
+    @using (Html.BeginForm())
+    {
+        <div class="col-md-12">
+            <h5>
+                Member list
+            </h5>
+            <div class="col-md-12" style="margin-bottom: 15px;">
+                @Html.ActionLink("Add Member", "Add", "Home", new { @class = "btn btn-primary" })
+            </div>
+            <table class="table table-bordered table-striped table-responsive">
+                <thead>
+                    <tr>
+                        <th>User Name</th>
+                        <th>Email</th>
+                        <th>Phone</th>
+                        <th>Address</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @item.UserName
+                                </td>
+                                <td>
+                                    @item.Email
+                                </td>
+                                <td>
+                                    @item.Phone
+                                </td>
+                                <td>
+                                    @item.Address
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Edit", "Edit", new { id = @item.Id }, new { @class = "btn btn-default" }) 
+                                    @Html.ActionLink("Delete", "Delete", new { id = @item.Id }, new { @class = "btn btn-danger" })
+                                </td>
+                            </tr>
+                        }
+                    }
+                </tbody>
+            </table>
+        </div>
+    }
+</div>

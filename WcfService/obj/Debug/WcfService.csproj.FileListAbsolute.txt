@@ -1,0 +1,9 @@
+E:\DemoMvcWcf\WcfService\bin\WcfService.dll.config
+E:\DemoMvcWcf\WcfService\bin\WcfService.dll
+E:\DemoMvcWcf\WcfService\bin\WcfService.pdb
+E:\DemoMvcWcf\WcfService\bin\EntityFramework.dll
+E:\DemoMvcWcf\WcfService\bin\EntityFramework.xml
+E:\DemoMvcWcf\WcfService\obj\Debug\WcfService.csproj.CoreCompileInputs.cache
+E:\DemoMvcWcf\WcfService\obj\Debug\WcfService.csproj.CopyComplete
+E:\DemoMvcWcf\WcfService\obj\Debug\WcfService.dll
+E:\DemoMvcWcf\WcfService\obj\Debug\WcfService.pdb
